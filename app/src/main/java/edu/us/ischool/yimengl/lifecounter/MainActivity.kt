@@ -101,9 +101,13 @@ class MainActivity : AppCompatActivity() {
         val currentLife = temp.split(' ')[1].toInt() + buttonTxt
         val updatedStatus = temp.split(' ')[0] + ' ' + currentLife.toString() + ' ' + temp.split(' ')[2]
         player.text = updatedStatus
+        val currentLoser = temp.split(": ")[0] + " Loses!"
         if (currentLife <= 0) {
-            val currentLoser = temp.split(": ")[0] + " Loses!"
             loser.text = currentLoser
+        } else {
+            if (loser.text == currentLoser) {
+                loser.text = ""
+            }
         }
     }
 }
