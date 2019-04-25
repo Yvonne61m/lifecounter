@@ -3,11 +3,8 @@ package edu.us.ischool.yimengl.lifecounter
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.LinearLayout
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_main.view.*
-import android.widget.Toast
-import org.w3c.dom.Text
+
 
 class MainActivity : AppCompatActivity() {
 
